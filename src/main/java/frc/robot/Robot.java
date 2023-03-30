@@ -65,7 +65,9 @@ public class Robot extends TimedRobot {
    * SmartDashboard integrated updating.
    */
   @Override
-  public void robotPeriodic() {}
+  public void robotPeriodic() {
+    swervy.updateOdometry();
+  }
 
   /**
    * This autonomous (along with the chooser code above) shows how to select between different
@@ -135,6 +137,5 @@ public class Robot extends TimedRobot {
   /** This function is called periodically whilst in simulation. */
   @Override
   public void simulationPeriodic() {
-    swervy.updateOdometry();
   }
 }
