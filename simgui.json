@@ -19,9 +19,16 @@
     },
     "windows": {
       "/SmartDashboard/Field": {
-        "Robot": {
-          "length": 0.05000000074505806,
-          "width": 0.05000000074505806
+        "XModules": {
+          "arrowColor": [
+            0.09611687064170837,
+            0.17414122819900513,
+            0.9803921580314636,
+            255.0
+          ],
+          "arrowSize": 33,
+          "arrowWeight": 3.0,
+          "style": "Hidden"
         },
         "window": {
           "visible": true

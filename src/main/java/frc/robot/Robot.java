@@ -111,7 +111,7 @@ public class Robot extends TimedRobot {
   /** This function is called periodically during operator control. */
   @Override
   public void teleopPeriodic() {
-    swervy.drive(new Translation2d(joy1.getX()*14.5, joy1.getY()*14.5), joy1.getZ(), false, true);
+    swervy.drive(new Translation2d(joy1.getX()*14.5, joy1.getY()*14.5), joy1.getZ()*14.5, false, true);
   }
 
   /** This function is called once when the robot is disabled. */
