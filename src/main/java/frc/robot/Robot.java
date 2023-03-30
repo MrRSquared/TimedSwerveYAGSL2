@@ -85,7 +85,7 @@ public class Robot extends TimedRobot {
     m_autoSelected = SmartDashboard.getString("Auto Selector", kDefaultAuto);
     System.out.println("Auto selected: " + m_autoSelected);
     if (m_autoSelected==kDefaultAuto){
-      swervy.drive(new Translation2d(3.0*14.5,0.6*14.5), 0.0, false, true);
+      swervy.drive(new Translation2d(3.0,0.6), 0.0, false, true);
     }
 
   }
@@ -111,7 +111,7 @@ public class Robot extends TimedRobot {
   /** This function is called periodically during operator control. */
   @Override
   public void teleopPeriodic() {
-    swervy.drive(new Translation2d(joy1.getX(), joy1.getY()), joy1.getZ(), false, true);
+    swervy.drive(new Translation2d(joy1.getX()*14.5, joy1.getY()*14.5), joy1.getZ(), false, true);
   }
 
   /** This function is called once when the robot is disabled. */
