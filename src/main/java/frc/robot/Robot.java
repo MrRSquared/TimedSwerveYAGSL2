@@ -85,7 +85,7 @@ public class Robot extends TimedRobot {
     m_autoSelected = SmartDashboard.getString("Auto Selector", kDefaultAuto);
     System.out.println("Auto selected: " + m_autoSelected);
     if (m_autoSelected==kDefaultAuto){
-      swervy.drive(new Translation2d(3.0,0.6), 0.0, false, true);
+      swervy.drive(new Translation2d(3.0*14.5,0.6*14.5), 0.0, false, true);
     }
 
   }
